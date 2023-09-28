@@ -134,7 +134,7 @@ public class TargetReachingManager : MonoBehaviour
                     _TargetManager.EnableTarget();
                     _ObstacleManager.EnableObstacle();
                 }
-                //InputRecord();
+                InputRecord();
             }
             else if (TrialTime > timelimit)
             {
@@ -143,8 +143,8 @@ public class TargetReachingManager : MonoBehaviour
                 {
                     isFinished = true;
                     textforEnd.SetActive(true);
-                    //_inputRecorder.WritingToServer();
-                    //_ResultRecorder.WritingToServer();
+                    _inputRecorder.WritingToServer();
+                    _ResultRecorder.WritingToServer();
                 }
                 else
                 {
