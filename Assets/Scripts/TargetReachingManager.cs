@@ -91,6 +91,11 @@ public class TargetReachingManager : MonoBehaviour
             redUi.SetActive(true);
             CanMoveBall = false;
         }
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            isResting = true;
+            _MinDistanceUI.text = "";
+        }
 
     }
     void FixedUpdate()
@@ -147,14 +152,14 @@ public class TargetReachingManager : MonoBehaviour
                     UpdateParameter();
                 }
             }
-        }      
+        }
     }
 
     private void OneTrialFinish()
     {
         result.Add(_TargetManager.CalculateScore());
         isTracing = false;
-        isResting = true;
+        //isResting = true;
         CanMoveBall = false;
         whiteUi.SetActive(true);
         redUi.SetActive(true);
@@ -184,7 +189,7 @@ public class TargetReachingManager : MonoBehaviour
 
     void UpdateUI()
     {
-        _MinDistanceUI.text = result[nowTrial-1].ToString("f4");
+        _MinDistanceUI.text = result[nowTrial-1].ToString("f4") + "\n" + "Press P button to proceed";
     }
 
     void RopeInitialize()
