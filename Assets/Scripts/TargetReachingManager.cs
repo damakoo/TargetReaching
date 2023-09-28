@@ -96,6 +96,7 @@ public class TargetReachingManager : MonoBehaviour
             isResting = true;
             _MinDistanceUI.text = "";
         }
+        if (Cursor.position.y < -10) ResetPos();
 
     }
     void FixedUpdate()
@@ -171,7 +172,9 @@ public class TargetReachingManager : MonoBehaviour
     {
         _TargetManager.SetTarget(Targetnumbers[nowTrial - 1]);
         _ObstacleManager.SetObstacle(Targetnumbers[nowTrial - 1]);
-        Debug.Log((Targetnumbers[nowTrial - 1]+1).ToString()); ;
+        Debug.Log((Targetnumbers[nowTrial - 1]+1).ToString());
+        _TargetManager.DisableTarget();
+        _ObstacleManager.DisableObstacle();
     }
 
 
@@ -226,7 +229,5 @@ public class TargetReachingManager : MonoBehaviour
             RopeChildrenTransform[i].rotation = RopeChildrenfirstQuaternion[i];
         }
         _cursorRigidbody.velocity = new Vector2(0, 0);
-        _TargetManager.DisableTarget();
-        _ObstacleManager.DisableObstacle();
     }
 }

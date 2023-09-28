@@ -142,54 +142,54 @@ public static class ObstacleList
 
     public static List<Quaternion> upperleftRot = new List<Quaternion>
     {
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f))
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f))
     };
     public static List<Quaternion> upperrightRot = new List<Quaternion>
     {
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
         Quaternion.Euler(new Vector3(0f,0f,15f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f))
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f))
     };
     public static List<Quaternion> lowerleftRot = new List<Quaternion>
     {
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
         Quaternion.Euler(new Vector3(0f,0f,-15f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
         Quaternion.Euler(new Vector3(0f,0f,-15f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f))
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f))
     };
     public static List<Quaternion> lowerrightRot = new List<Quaternion>
     {
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f)),
-        Quaternion.Euler(new Vector3(0f,0f,0f))
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f)),
+        Quaternion.Euler(new Vector3(0f,0f,-1f)),
+        Quaternion.Euler(new Vector3(0f,0f,1f))
     };
 }
