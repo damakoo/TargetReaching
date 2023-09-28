@@ -2,8 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
-using Unity.VisualScripting;
 
 public class TargetReachingManager : MonoBehaviour
 {
@@ -42,7 +40,7 @@ public class TargetReachingManager : MonoBehaviour
     private Quaternion firstRightCursorRot;
     private Quaternion firstLeftCursorRot;
     List<int> numbers = new List<int>();
-    List<int> Targetnumbers = new List<int>();
+    public List<int> Targetnumbers { get; set; } = new List<int>();
     public bool CanMoveBall { get; set; } = true;
     [SerializeField] GameObject whiteUi;
     [SerializeField] GameObject redUi;

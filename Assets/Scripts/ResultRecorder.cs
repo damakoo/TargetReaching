@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class ResultRecorder : MonoBehaviour
@@ -7,7 +5,7 @@ public class ResultRecorder : MonoBehaviour
     [SerializeField] CSVWriter _CSVWriter;
     [SerializeField] TargetReachingManager _targetReachingManager;
 
-    string InitialText = "Trial" + "," + "Result" + "\n";
+    string InitialText = "Trial" + "," + "Result" + "Course" + "\n";
 
 
     public void WritingToServer()
@@ -15,7 +13,7 @@ public class ResultRecorder : MonoBehaviour
         string _content = InitialText;
         for (int i = 0; i < _targetReachingManager.result.Count; i++)
         {
-            _content += i.ToString() + "," + _targetReachingManager.result[i].ToString() + "\n";
+            _content += i.ToString() + "," + _targetReachingManager.result[i].ToString() + "," + _targetReachingManager.Targetnumbers[i].ToString() + "\n";
         }
         _CSVWriter.WriteCSV(_content);
     }

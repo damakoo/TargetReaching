@@ -32,7 +32,7 @@ public static class TargetList
     };
     public static List<Vector3> upperright = new List<Vector3>
     {
-        new Vector3(5,2,1),
+        new Vector3(5,1.7f,1),
         new Vector3(6,2,1),
         new Vector3(4,3.2f,1),
         new Vector3(4.5f,2.5f,1),
