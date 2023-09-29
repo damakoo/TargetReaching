@@ -5,7 +5,7 @@ public class ResultRecorder : MonoBehaviour
     [SerializeField] CSVWriter _CSVWriter;
     [SerializeField] TargetReachingManager _targetReachingManager;
 
-    string InitialText = "Trial" + "," + "Result" + "Course" + "\n";
+    string InitialText = "Trial" + "," + "Result" + "," + "Course" + "\n";
 
 
     public void WritingToServer()

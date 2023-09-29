@@ -19,7 +19,7 @@ public class InputRecorder : MonoBehaviour
         + "," + "LeftPos_x" + "," + "LeftPos_y"
         + "," + "RightPos_x" + "," + "RightPos_y"
         + "," + "TargetPos_x" + "," + "TargetPos_y"
-        + "," + "LineNum" + "," + "\n";
+        + "," + "Course" + "," + "\n";
 
 
     public void WritingToServer()
