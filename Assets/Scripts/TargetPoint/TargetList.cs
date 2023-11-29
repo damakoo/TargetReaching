@@ -27,7 +27,7 @@ public static class TargetList
         {
             int Practicenum = Practice_set[i];
             // 行をカンマで分割して列のデータを取得
-            string[] columns = lines[Practicenum].Split(',');
+            string[] columns = lines[Practicenum+1].Split(',');
 
             // 列のインデックスを見つける
             string[] headers = lines[0].Split(',');

@@ -16746,8 +16746,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   filename: PracticeSet
-  PracticeNumbers: 0100000002000000030000000400000005000000
-  numTrial: 10
+  PracticeNumbers: 0400000007000000190000002b0000003d0000006200000080000000a8000000fe00000051010000
   CanMoveTime: 5
   ReadyTime: 0
   _inputRecorder: {fileID: 1301980863}
