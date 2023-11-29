@@ -5,7 +5,9 @@ using TMPro;
 
 public class TargetReachingManager : MonoBehaviour
 {
-    public int numTrial = 10;
+    [SerializeField] string filename;
+    [SerializeField] List<int> PracticeNumbers;
+    private int numTrial;
     [SerializeField] float CanMoveTime = 5;
     [SerializeField] float ReadyTime = 1;
     [SerializeField] InputRecorder _inputRecorder;
@@ -54,13 +56,17 @@ public class TargetReachingManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        numTrial = PracticeNumbers.Count;
         textforEnd.SetActive(false);
         whiteUi.SetActive(false);
         redUi.SetActive(false);
         RopeInitialize();
         Initialize();
         _MinDistanceUI.text = "";
-        for (int i = 0; i < TargetList.TargetsList[0].Count; i++)
+        ObstacleList.UpdateParameter(PracticeNumbers, Application.dataPath + "/StreamingAssets/Set_Practice/" + filename + ".csv");
+        TargetList.UpdateParameter(PracticeNumbers, Application.dataPath + "/StreamingAssets/Set_Practice/" + filename + ".csv");
+        for (int i = 0; i < PracticeNumbers.Count; i++) Targetnumbers.Add(i);
+        /*for (int i = 0; i < TargetList.TargetsList[0].Count; i++)
         {
             numbers.Add(i);
         }
@@ -73,7 +79,7 @@ public class TargetReachingManager : MonoBehaviour
             int ransu = numbers[index];
             Targetnumbers.Add(ransu);
             numbers.RemoveAt(index);
-        }
+        }*/
         _cursorRigidbody = Cursor.GetComponent<Rigidbody2D>();
     }
 

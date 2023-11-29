@@ -16745,9 +16745,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61bb6448f4161469b80ad26762fb4d0b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  filename: PracticeSet
+  PracticeNumbers: 0100000002000000030000000400000005000000
   numTrial: 10
   CanMoveTime: 5
-  ReadyTime: 1
+  ReadyTime: 0
   _inputRecorder: {fileID: 1301980863}
   _ResultRecorder: {fileID: 293107674}
   _TargetManager: {fileID: 959421408}
@@ -16759,8 +16761,8 @@ MonoBehaviour:
   RopeParent: {fileID: 400354480}
   whiteUi: {fileID: 717158873}
   redUi: {fileID: 383918744}
-  resttime: 6
-  RestwithNoUI: 4
+  resttime: 3
+  RestwithNoUI: 1
   _MinDistanceUI: {fileID: 1288882588}
 --- !u!1 &2097468362
 GameObject:
