@@ -152,10 +152,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b13dde01394424a6f9b9b3fcc5e31999, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  filename: PracticeSet
-  filename_clustercenter: ClusterCenter
-  filename_assignments: Assignments
-  filename_closestpoints: ClosestPoints
+  filename: pca_output
+  filename_clustercenter: ClusterCenter_pca_output
+  filename_assignments: Assignments_pca_output
+  filename_closestpoints: ClosestPoints_pca_output
   k: 10
 --- !u!4 &1251886858
 Transform:
